@@ -9,6 +9,7 @@ def extract_text_from_pdf(pdf_path):
     :return: Extracted text as a string
     """
     text = ""
+    print("Extracting text from PDF...")
     with open(pdf_path, 'rb') as file:
         pdf_reader = PyPDF2.PdfReader(file)
         for page in pdf_reader.pages:
